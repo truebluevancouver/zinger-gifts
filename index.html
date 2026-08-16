@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Zinger Gifts — curated boutique gift baskets, party favours and thoughtful finds.">
+  <title>Zinger Gifts | Boutique Gifts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">✨ Thoughtful gifts, curated with personality</div>
+  <header class="site-header">
+    <a class="brand" href="#home">Zinger <span>Gifts</span></a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <nav class="nav"><a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <button class="cart-btn" id="cartButton">Bag <span id="cartCount">0</span></button>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy"><span class="eyebrow">Boutique gifting made easy</span><h1>Find the gift that feels just right.</h1><p>Curated gift baskets, party favours and charming little luxuries for birthdays, celebrations, thank-yous and just-because moments.</p><div class="hero-actions"><a class="button primary" href="#shop">Shop the collection</a><a class="button secondary" href="#about">About Zinger</a></div></div>
+      <div class="hero-card"><div class="hero-z">Z</div><p>Little surprises.<br>Big smiles.</p></div>
+    </section>
+    <section class="category-strip"><span>🎉 Party Favours</span><span>🧁 Spa & Self-Care</span><span>🌼 Gift Baskets</span><span>✨ Fashion & Accessories</span></section>
+    <section class="shop-section" id="shop"><div class="section-heading"><div><span class="eyebrow">The collection</span><h2>Shop Zinger Gifts</h2></div><p>Every product below has its own photo, description and full “what’s included” list. No PDF pages — just a clean boutique shopping experience.</p></div><div class="product-grid" id="productGrid"></div></section>
+    <section class="about" id="about"><div class="about-card"><span class="eyebrow">About Zinger Gifts</span><h2>Gifting should feel fun.</h2><p>Zinger Gifts is a small online boutique focused on cheerful, ready-to-give bundles. We bring together useful, playful and beautiful items so you can skip the stressful hunt and give something memorable.</p></div><div class="about-list"><div><strong>Curated</strong><p>Thoughtfully grouped items with a clear theme and purpose.</p></div><div><strong>Gift-ready</strong><p>Bundles made to feel complete, special and easy to give.</p></div><div><strong>Personal</strong><p>A smaller collection with more character than an endless marketplace.</p></div></div></section>
+    <section class="contact" id="contact"><div><span class="eyebrow">Contact</span><h2>Questions or a special request?</h2><p>Send Zinger Gifts a message and we’ll be happy to help.</p></div><form class="contact-form" onsubmit="event.preventDefault();alert('Thanks! The contact form is ready to be connected to your email.');"><input required placeholder="Your name"><input required type="email" placeholder="Email address"><textarea required rows="5" placeholder="How can we help?"></textarea><button class="button primary" type="submit">Send message</button></form></section>
+  </main>
+  <aside class="cart-panel" id="cartPanel" aria-hidden="true"><div class="cart-header"><h2>Your Bag</h2><button id="closeCart" aria-label="Close">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-footer"><div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div><p class="cart-note">Shipping/handling is calculated separately where noted.</p><button class="button primary checkout" onclick="alert('Checkout is ready to be connected to a payment provider.')">Checkout</button></div></aside>
+  <div class="overlay" id="overlay"></div>
+  <div class="modal-wrap" id="productModal" aria-hidden="true"><div class="modal-card"><button class="modal-close" id="modalClose" aria-label="Close">×</button><div id="modalBody"></div></div></div>
+  <footer><a class="brand footer-brand" href="#home">Zinger <span>Gifts</span></a><p>Thoughtful gifts, happy moments.</p><small>© 2026 Zinger Gifts. All rights reserved.</small></footer>
+  <script src="script.js"></script>
+</body></html>
