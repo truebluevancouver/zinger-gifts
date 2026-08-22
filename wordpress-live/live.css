@@ -1,0 +1,7 @@
+/* Zinger Gifts WordPress live overrides.
+   Routine visual tweaks can be shipped here without reinstalling the theme. */
+
+/* Keep legacy/starter navigation items out of sight as a front-end fallback. */
+.site-header .nav a[href*="/blog"],
+.site-header .nav a[href*="/get-free"],
+.site-header .nav a[href*="/products"] { display:none !important; }
